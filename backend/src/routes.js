@@ -12,6 +12,10 @@ const PointsController = require('./Controllers/PointsController')
 const AuthController = require('./Controllers/AuthController')
 const UsersController = require('./Controllers/UsersController')
 
+routes.get('/', function index(req, res){
+  return res.json({ inicio : 'TELA INICIAL DO SISTEMA', data:  new Date()})
+});
+
 routes.post('/signup', AuthController.signUp)
 routes.post('/signin', AuthController.signIn)
 
