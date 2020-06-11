@@ -7,7 +7,6 @@ function Input({
     title="Informe o title",
     type="text",
     htmlfor="text",
-    value='',
     onchange= () => '',
   }) {
   return (
@@ -17,7 +16,6 @@ function Input({
         type={type}
         name={htmlfor}
         id={htmlfor}
-        value={value}
         onChange={onchange}
       />
     </div>

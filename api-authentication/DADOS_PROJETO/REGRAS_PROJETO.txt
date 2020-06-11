@@ -1,0 +1,59 @@
+criar tabela de sistema
+create table sistema {
+	siscodigo int not null, --
+	sisnome varchar(200) not null,
+	sisurl varchar(200) not null,
+	sisdescricao varchar(200) not null,
+	sistipo varchar(50) not null -- lista fixa com os tipos, {desenvolvimento, armazenamento de projeto, etc}
+	updatedAt
+	createdAt
+}
+
+criar tabela de grupo de usuario
+
+create table grupousuario {
+	grucodigo int not null, --
+	grunome varchar(200) not null,
+	grudescricao varchar(200) not null,
+	updatedAt
+	createdAt
+}
+
+criar tabela de tela
+
+create table tela {
+	telcodigo int not null, --
+	telnome varchar(200) not null,
+	teldescricao varchar(200) not null,
+	siscodigo int not null, --FK PARA SISTEMA
+	updatedAt
+	createdAt
+}
+
+
+criar tabela de usuario
+
+criar tabela de usuario
+
+create table usuario {
+	id int not null, --
+	name varchar(200) not null,
+	email varchar(200) not null,
+	password varchar(200) not null,
+}
+
+
+create table grupousuario {
+	grucodigo int not null, --
+	grunome varchar(200) not null,
+	grudescricao varchar(200) not null,
+	updatedAt
+	createdAt
+}
+
+Dados da biblioteca axios:
+
+https://github.com/axios/axios
+
+
+

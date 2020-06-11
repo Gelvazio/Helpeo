@@ -4,9 +4,9 @@ import './App.css';
 import Router from "./routes"
 
 function App() {
-  return (
-    <Router />
-  );
+    return (
+        <Router/>
+    );
 }
 
 export default App;

@@ -35,7 +35,9 @@ function SignIn() {
   async function handleSubmit(e) {
     e.preventDefault()
 
-    if (!email || !password) return setError("Preencha os campos")
+    if (!email || !password){
+      return setError("Preencha os campos");
+    }
 
     const data = {
       email,
@@ -45,8 +47,9 @@ function SignIn() {
     try {
       const res = await api.post('/signin', data)
 
-      login(res.data.token)
-      history.push('/user/profile')
+      login(res.data.token);
+      history.push('/user/profile');
+
     } catch (e) {
       setError('Aconteceu algum erro, verifique suas credenciais!')
     }
@@ -59,7 +62,7 @@ function SignIn() {
       <form action="/signin" method="POST" onSubmit={handleSubmit}>
         <fieldset>
           <legend>
-            <h1>Login</h1>
+            <h1 class="titleLogin">Login</h1>
           </legend>
 
           <AlertError error={error} onclick={() => setError('')} />

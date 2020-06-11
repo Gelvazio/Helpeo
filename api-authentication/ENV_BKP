@@ -1,0 +1,22 @@
+NODE_ENV = 'homolog'
+PASSWORD = 'pwdHmg'
+VERSION  = '1';
+
+#DB_MONGO_HOSTNAME = 'omnistack:omnistack@cluster0-dfpzp.mongodb.net'
+#DB_MONGO_USERNAME = 'omnistack'
+#DB_MONGO_PASSWORD = 'omnistack'
+#DB_MONGO_DATABASE = 'semana09'
+#DB_MONGO_PORT = 00000
+
+SECRET='Day0b}%HL-3-Sxpt)pcd.sGn:rb614>5>uWXnBe0+|kFx[0gh}!Ul(9kaBH}6Dy3z-[D+X47WF$-<eRfX}09@aKCcR^AWt3+ew?'
+SECRET_TIME_EXPIRES=86400
+
+#Dados de acesso ao banco da api
+DB_MONGO_HOSTNAME = 'apiauthenticate:1K4gQUFxomXf80CV@cluster0-dfpzp.mongodb.net'
+DB_MONGO_USERNAME = 'admin'
+DB_MONGO_PASSWORD = '1K4gQUFxomXf80CV'
+DB_MONGO_DATABASE = 'apiauthenticate'
+DB_MONGO_PORT     = 00000
+
+#usuario:admin
+#senha usuario admin:1K4gQUFxomXf80CV

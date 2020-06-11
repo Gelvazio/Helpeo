@@ -105,3 +105,8 @@ dist
 
 # Database
 db.sqlite
+
+idea./
+
+backend/node_modules/
+web/node_modules/
