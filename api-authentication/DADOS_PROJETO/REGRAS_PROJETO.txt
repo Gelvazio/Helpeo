@@ -30,7 +30,6 @@ create table tela {
 	createdAt
 }
 
-
 criar tabela de usuario
 
 criar tabela de usuario
@@ -40,8 +39,8 @@ create table usuario {
 	name varchar(200) not null,
 	email varchar(200) not null,
 	password varchar(200) not null,
+	grucodigo samllint default 1 not null --1 é um grupo geral com permissao so de visualizacao
 }
-
 
 create table grupousuario {
 	grucodigo int not null, --
