@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 
 import BackTo from '../../Components/BackTo'
+import Header from '../../Components/Header'
 import Password from '../../Components/Password'
 import Input from '../../Components/Input'
 import AlertError from '../../Components/AlertError'
@@ -57,7 +58,8 @@ function SignIn() {
 
   return (
     <div className="page-sign">
-      <BackTo to='/' back="Home" />
+      <Header />
+      {/*<BackTo to='/' back="Home" />*/}
 
       <form action="/signin" method="POST" onSubmit={handleSubmit}>
         <fieldset>
